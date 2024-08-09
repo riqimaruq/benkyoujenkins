@@ -18,4 +18,4 @@ spec:
         image: riqimaruq/belajar:v1
         ports:
         - name: web
-          containerPort: 80
+          containerPort: 8049
