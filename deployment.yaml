@@ -1,21 +1,20 @@
-apiVersion: apps/v1
 kind: Deployment
+apiVersion: apps/v1
 metadata:
-  labels:
-    app: nginx
-    app.kubernetes.io/instance: belajar2
-  name: nginx-deployment
-  namespace: belajar2
+   name: website
 spec:
-  replicas: 1
-  selector: {}
-  template:
-    metadata:
-      labels:
-        app: nginx
-    spec:
-      containers:
-        - image: nginx:1.14.2
-          name: nginx
+   replicas: 2
+   selector:      # tells the controller which pods to watch/belong to
+    matchLabels:
+     app: website
+   template:
+      metadata:
+        labels:
+          app: website
+      spec:
+       containers:
+        - name: website
+          image: riqimaruq/belajar
+          imagePullPolicy: Always
           ports:
-            - containerPort: 80
+          - containerPort: 80
