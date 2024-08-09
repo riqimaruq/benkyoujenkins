@@ -1,15 +1,16 @@
-kind: Service                             
 apiVersion: v1
+kind: Service
 metadata:
-  name: website
-  namespace : website
+  name: app-test-1-svc
+  namespace: app-test-1
   labels:
-    app: website
+    app: app-test-1
 spec:
+  type: ClusterIP
   ports:
-    - port: 8080                               
-      targetPort: 80                    
-      nodePort: 31200
+  - name:  http
+    port:  80
+    targetPort: 80
+    protocol: TCP
   selector:
-    app: website                    
-  type: LoadBalancer                   
+    app: app-test-1
