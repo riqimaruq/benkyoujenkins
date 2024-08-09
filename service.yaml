@@ -4,8 +4,8 @@ metada:
   name: nginx-service
 metadata:
   labels:
-    app.kubernetes.io/instance: belajar
-  namespace: belajar
+    app.kubernetes.io/instance: belajar2
+  namespace: belajar2
 spec:
   ports:
     - nodePort: 30007
