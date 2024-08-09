@@ -3,9 +3,9 @@ kind: Deployment
 metadata:
   labels:
     app: nginx
-    app.kubernetes.io/instance: belajar
+    app.kubernetes.io/instance: belajar2
   name: nginx-deployment
-  namespace: belajar
+  namespace: belajar2
 spec:
   replicas: 1
   selector: {}
