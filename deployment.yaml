@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app-test-1
-        image: riqimaruq/belajar:v2
+        image: riqimaruq/belajar:v1
         ports:
         - name: web
           containerPort: 8046
