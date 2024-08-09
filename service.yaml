@@ -10,7 +10,7 @@ spec:
   ports:
   - name:  http
     port:  80
-    targetPort: 8046
+    targetPort: 80
     protocol: TCP
   selector:
     app: app-test-1
