@@ -1,15 +1,14 @@
+kind: Service                             
 apiVersion: v1
-kind: Service
-metada:
-  name: nginx-service
 metadata:
+  name: website
   labels:
-    app.kubernetes.io/instance: belajar2
-  namespace: belajar2
+    app: website
 spec:
   ports:
-    - nodePort: 30007
-      port: 80
+    - port: 8080                               
+      targetPort: 80                    
+      nodePort: 31200
   selector:
-    app: nginx
-  type: NodePort
+    app: website                    
+  type: LoadBalancer                   
