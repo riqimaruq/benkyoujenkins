@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app-test-1
-        image: riqimaruq/webiste
+        image: riqimaruq/webiste:latest
         ports:
         - name: web
           containerPort: 8046
