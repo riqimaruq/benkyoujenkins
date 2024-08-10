@@ -6,7 +6,7 @@ metadata:
   labels:
     app: app-test-1
 spec:
-  type: LoadBalancer
+  type: Clusterip
   ports:
   - name:  http
     port:  80
