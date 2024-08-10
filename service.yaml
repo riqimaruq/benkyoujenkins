@@ -14,4 +14,3 @@ spec:
     protocol: TCP
   selector:
     app: app-test-1
-    type: NodePort
